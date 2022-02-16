@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishika's INCOME Site</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1 class="text-5xl text-center mt-16">Ishika's <span class="font-semibold text-emerald-600">Monthly
+                Expenses</span>
+        </h1>
+        </h1>
+    </header>
+    <main>
+        <section class="m-8">
+            <div class="w-50 md:w-100 lg:w-100 grid grid-cols-2 gap-8">
+                <!---------------- Image ------------ -->
+                <div class="w-100">
+                    <img class=" pt-4 img-fluid h-120" src="money.jpg" alt="">
+                </div>
+                <!-------------- Main Calculation area------------------ -->
+                <div class="w-100 bg-zinc-200">
+                    <div class="text-5xl text-center mt-9">
+                        <h6 class="text-lg font-bold">INCOME</h6>
+                    </div>
+                    <div class="mt-5 ml-40 flex">
+                        <div>
+                            <h6 class="font-medium">Income : </h6>
+                        </div>
+                        <div class="pl-3">
+                            <input id="" class="border block border-gray-200 rounded w-4/4 mb-4 px-2" type="text"
+                                placeholder="$Put Income">
+                        </div>
+                    </div>
+
+                    <!-- ------Expense Area------------- -->
+
+                    <div class="w-100 text-5xl text-center">
+                        <h6 class="text-lg font-bold">EXPENSES</h6>
+                    </div>
+                    <div class="w-100 mt-5 ml-40 flex">
+                        <!--------------- FOOD------------- -->
+                        <div>
+                            <h6 class="font-medium ml-4">Food : </h6>
+                        </div>
+                        <div class="pl-3">
+                            <input id="" class="border block border-gray-200 rounded w-4/4 mb-4 px-2" type="text"
+                                placeholder="$Food Cost">
+                        </div>
+                    </div>
+                    <!---------------------RENT ------------------ -->
+                    <div class="mt-5 ml-40 flex">
+                        <div>
+                            <h6 class="font-medium ml-4">Rent : </h6>
+                        </div>
+                        <div class="pl-3">
+                            <input id="" class="border block border-gray-200 rounded w-4/4 mb-4 px-2" type="text"
+                                placeholder="$Rent Cost">
+                        </div>
+                    </div>
+                    <!-- --------------------Clothes---------------- -->
+                    <div class="mt-5 ml-40 flex">
+                        <div>
+                            <h6 class="font-medium ml-1">Clothes : </h6>
+                        </div>
+                        <div class="pl-2">
+                            <input id="" class="border block border-gray-200 rounded w-4/4 mb-4 px-2" type="text"
+                                placeholder="$Clothing Cost">
+                            <!-- ---------------Button--------------- -->
+                            <button id="deposit-button"
+                                class="bg-emerald-500 px-4 rounded py-2 text-white font-semibold">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
