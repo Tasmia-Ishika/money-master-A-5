@@ -19,17 +19,18 @@
     </header>
     <main>
         <section class="m-8">
-            <div class="w-50 md:w-100 lg:w-100 grid grid-cols-2 gap-8">
+            <!-- grid-cols-2 -->
+            <div class="grid md:grid-cols-1 lg:grid-cols-2 gap-8 bg-setup">
                 <!---------------- Image ------------ -->
-                <div class="w-100">
-                    <img class=" pt-4 img-fluid h-120" src="money.jpg" alt="">
+                <div>
+                    <img class="pt-4 h-120" src="money.jpg" alt="">
                 </div>
                 <!-------------- Main Calculation area------------------ -->
-                <div class="w-100 bg-zinc-200">
-                    <div class="text-5xl text-center mt-9">
+                <div class="bg-zinc-200">
+                    <div class="text-5xl pl-20 mt-9">
                         <h6 class="text-lg font-bold">INCOME</h6>
                     </div>
-                    <div class="mt-5 ml-40 flex">
+                    <div class="mt-3 ml-20 mr-20 flex">
                         <div>
                             <h6 class="font-medium">Income : </h6>
                         </div>
@@ -41,11 +42,11 @@
 
                     <!-- ------Expense Area------------- -->
 
-                    <div class="w-100 text-5xl text-center">
+                    <div class="text-5xl pl-20">
                         <h6 class="text-lg font-bold">EXPENSES</h6>
                     </div>
-                    <div class="w-100 mt-5 ml-40 flex">
-                        <!--------------- FOOD------------- -->
+                    <!--------------- FOOD------------- -->
+                    <div class="mt-3 ml-20 mr-20 flex">
                         <div>
                             <h6 class="font-medium ml-4">Food : </h6>
                         </div>
@@ -55,7 +56,7 @@
                         </div>
                     </div>
                     <!---------------------RENT ------------------ -->
-                    <div class="mt-5 ml-40 flex">
+                    <div class="mt-3 ml-20 mr-20 flex">
                         <div>
                             <h6 class="font-medium ml-4">Rent : </h6>
                         </div>
@@ -65,11 +66,11 @@
                         </div>
                     </div>
                     <!-- --------------------Clothes---------------- -->
-                    <div class="mt-5 ml-40 flex">
+                    <div class="mt-3 ml-20 mr-20 flex">
                         <div>
                             <h6 class="font-medium ml-1">Clothes : </h6>
                         </div>
-                        <div class="pl-2">
+                        <div class="pl-1">
                             <input id="" class="border block border-gray-200 rounded w-4/4 mb-4 px-2" type="text"
                                 placeholder="$Clothing Cost">
                             <!-- ---------------Button--------------- -->
@@ -77,10 +78,69 @@
                                 class="bg-emerald-500 px-4 rounded py-2 text-white font-semibold">Calculate</button>
                         </div>
                     </div>
+                    <!-- -----------------------total expense----------------- -->
+                    <div class="mt-3 ml-20 mr-20 flex">
+                        <div>
+                            <h6 class="font-medium ml-4">Total Expenses : </h6>
+                        </div>
+                        <div class="pl-3">
+                            <input id="" class="border block border-gray-200 rounded w-4/4 mb-4 px-2" type="text"
+                                placeholder="$Cost">
+                        </div>
+                    </div>
+                    <!-------------------- balance-------------------- -->
+                    <div class="mt-3 ml-20 mr-20 flex">
+                        <div>
+                            <h6 class="font-medium ml-4">Balance : </h6>
+                        </div>
+                        <div class="pl-3">
+                            <input id="" class="border block border-gray-200 rounded w-4/4 mb-4 px-2" type="text"
+                                placeholder="$Cost">
+                        </div>
+                    </div>
+                    <!------------------ percentage section------------- -->
+                    <div class="mt-3 ml-20 mr-20 flex">
+                        <div>
+                            <h6 class="font-medium ml-4">Save : </h6>
+                        </div>
+                        <div class="pl-3 flex">
+                            <div><input id="" class="border block border-gray-200 rounded w-4/4 mb-4 px-2" type="text"
+                                    placeholder="$Cost">
+                            </div>
+
+                            <div class="pl-2">
+                                <span> %
+                                </span>
+                            </div>
+
+                            <div class="pl-2"><button id="deposit-button"
+                                    class="bg-emerald-500 px-3 rounded py-1 text-white font-semibold">Save </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- --------------Saving amount ------------------------>
+                    <div class="mt-3 ml-20 mr-20 flex">
+                        <div>
+                            <h6 class="font-medium ml-4">Saving Amount : </h6>
+                        </div>
+                        <div class="pl-3">
+                            <input id="" class="border block border-gray-200 rounded w-4/4 mb-4 px-2" type="text"
+                                placeholder="$Cost">
+                        </div>
+                    </div>
+                    <!----------- Remaining balance--------------- -->
+                    <div class="mt-3 ml-20 mr-20 mb-8 flex">
+                        <div>
+                            <h6 class="font-medium ml-4">Remaining Balance : </h6>
+                        </div>
+                        <div class="pl-3">
+                            <input id="" class="border block border-gray-200 rounded w-4/4 mb-4 px-2" type="text"
+                                placeholder="$Cost">
+                        </div>
+                    </div>
                 </div>
-
             </div>
-
         </section>
     </main>
 </body>
