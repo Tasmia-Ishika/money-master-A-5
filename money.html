@@ -32,7 +32,7 @@
                     <!------------------ total income---------------- -->
                     <div class="mt-3 flex justify-end">
                         <h2 class="font-bold text-xl"> Income: </h2>
-                        <input id="" class="border-gray-400 rounded w-1/2 px-2 ml-5 mr-10 py-3" type="text"
+                        <input id="income-input" class="border-gray-400 rounded w-1/2 px-2 ml-5 mr-10 py-3" type="text"
                             placeholder="$Put Income">
                     </div>
 
@@ -43,40 +43,45 @@
 
                     <div class="mt-3 flex justify-end">
                         <h2 class="font-bold text-xl"> Food: </h2>
-                        <input id="" class="border-gray-400 rounded w-1/2 px-2 ml-5 mr-10 py-3" type="text"
+                        <input id="food-cost" class="border-gray-400 rounded w-1/2 px-2 ml-5 mr-10 py-3" type="text"
                             placeholder="$Cost">
                     </div>
                     <!---------------------RENT ------------------ -->
                     <div class="mt-3 flex justify-end">
                         <h2 class="font-bold text-xl"> Rent: </h2>
-                        <input id="" class="border-gray-400 rounded w-1/2 px-2 ml-5 mr-10 py-3" type="text"
+                        <input id="rent-cost" class="border-gray-400 rounded w-1/2 px-2 ml-5 mr-10 py-3" type="text"
                             placeholder="$Cost">
                     </div>
                     <!-- --------------------Clothes------------------>
                     <div class="mt-3 flex justify-end">
                         <h2 class="font-bold text-xl"> Clothes: </h2>
-                        <input id="" class="border-gray-400 rounded w-1/2 px-2 ml-5 mr-10 py-3" type="text"
+                        <input id="cloth-cost" class="border-gray-400 rounded w-1/2 px-2 ml-5 mr-10 py-3" type="text"
                             placeholder="$Cost">
                     </div>
+                    <!------------------- calculate button=--------- -->
+                    <button id="calculate-button"
+                        class="bg-emerald-500 px-12 rounded mt-7 py-2 rounded text-white font-semibold"><span>Calculate</span>
+                    </button>
                     <!-- -----------------------total expense----------------- -->
 
 
-                    <h3 class="font-bold mt-3 text-2xl text-center ml-4">Total Expenses : <span>0</span> </h3>
+                    <h3 class="font-bold mt-3 text-2xl text-center ml-4">Total Expenses : <span id="total-cost">0</span>
+                    </h3>
 
 
                     <!-------------------- balance-------------------- -->
 
-                    <h4 class="font-bold mt-3 text-center text-2xl ml-4">Balance: <span>0</span> </h4>
+                    <h4 class="font-bold mt-3 text-center text-2xl ml-4">Balance: <span id="money-left">0</span> </h4>
 
                     <!------------------ percentage section------------- -->
                     <div class="pt-4 font-bold">
                         <span>
                             <h3 class=" text-xl"> Save: </h3>
                         </span>
-                        <input id="" class="border text-xl w-1/4 border-gray-400 rounded  py-2 px-2" type="text"
-                            placeholder="$Cost">
+                        <input id="my-saving" class="border text-xl w-1/4 border-gray-400 rounded  py-2 px-2"
+                            type="text" placeholder="$Cost">
                         <span> % </span>
-                        <button id="deposit-button"
+                        <button id="save-button"
                             class="bg-emerald-500 px-5 rounded py-2 rounded text-white font-semibold"><span>Save</span>
                         </button>
 
@@ -84,14 +89,16 @@
                     <!-- --------------Saving amount ------------------------>
                     <div class="mt-3 ml-20 mr-20">
                         <div>
-                            <h3 class="font-bold text-center text-2xl ml-4">Saving Amount : <span>0</span> </h3>
+                            <h3 class="font-bold text-center text-2xl ml-4">Saving Amount : <span
+                                    id="saved-money">0</span> </h3>
                         </div>
 
                     </div>
                     <!----------- Remaining balance--------------- -->
                     <div class="mt-3 ml-20 mr-20 mb-8">
                         <div>
-                            <h3 class="font-bold text-center text-2xl ml-4">Remaining Balance : <span>0</span>
+                            <h3 class="font-bold text-center text-2xl ml-4">Remaining Balance : <span
+                                    id="total-money">0</span>
                             </h3>
                         </div>
                     </div>
@@ -100,6 +107,7 @@
             </div>
         </section>
     </main>
+    <script src="js/money.js"></script>
 </body>
 
 </html>
