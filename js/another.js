@@ -6,7 +6,7 @@ function getInputValue(inputId) {
     const inputAmount = parseFloat(inputAmountText);
     //error handle
     if (isNaN(inputAmount) || inputAmount < 0) {
-        return alert('Please input valid amount.');
+        return alert('Please input valid amount of money in number format');
     }
 
     return inputAmount;
@@ -36,7 +36,7 @@ document.getElementById('calculate-button').addEventListener('click', function (
 
     /// error handle 
     if (totalExpenseAmount > newIncomeAmount) {
-        return alert('You do not have sufficient money');
+        return alert('You do not have enough money');
     }
     //update balance
     const updateBalance = document.getElementById('money-left');
@@ -57,7 +57,7 @@ document.getElementById('calculate-button').addEventListener('click', function (
 
         // error handle  
         if (updateRemainingBalance < savingInPercent) {
-            return alert('kire mama?? ki shomossha tomar?');
+            return alert('You do not have enough money');
         }
 
         //Remaining Balance
